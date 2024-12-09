@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagens/logo.png" alt="Capelo e diploma" />
+            <h1>Calculadora de Média</h1>
+        </header>
+
+        <form id="form-atividade" aria-label="Formulário de cadastro de atividades">
+            <input type="text" id="nome-atividade" placeholder="Nome da atividade" required />
+            <input type="number" id="nota-atividade" placeholder="Nota" min="0" max="10" required />
+            <button type="submit">Adicionar +</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da atividade</th>
+                    <th>Nota de atividade</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As linhas serão inseridas aqui dinamicamente -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média final</td>
+                    <td id="media-final-valor">---</td>
+                    <td id="media-final-resultado">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- JS -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
